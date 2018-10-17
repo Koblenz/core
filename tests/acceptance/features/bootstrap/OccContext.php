@@ -537,7 +537,6 @@ class OccContext implements Context {
 	    );
 	 }
 
-
 	/**
 	 * @When the administrator sets the log file path to :path using the occ command
 	 *
