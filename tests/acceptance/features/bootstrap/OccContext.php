@@ -533,9 +533,9 @@ class OccContext implements Context {
 	*/
 	public function theAdministratorEnablesOwnCloudBackendUsingTheOccCommand() {
 		$this->featureContext->invokingTheCommand(
-	    	"log:owncloud --enable"
-	    );
-	 }
+			"log:owncloud --enable"
+		);
+	}
 
 	/**
 	 * @When the administrator sets the log file path to :path using the occ command
@@ -546,8 +546,8 @@ class OccContext implements Context {
 	 */
 	public function theAdministratorSetsLogFilePathUsingTheOccCommand($path) {
 		$this->featureContext->invokingTheCommand(
-	    	"log:owncloud --file $path"
-	  );
+			"log:owncloud --file $path"
+		);
 	}
 
 	/**
@@ -559,8 +559,8 @@ class OccContext implements Context {
 	 */
 	public function theAdministratorSetsLogFileSizeUsingTheOccCommand($size) {
 		$this->featureContext->invokingTheCommand(
-	  		"log:owncloud --file $size"
-	  );
+			"log:owncloud --file $size"
+		);
 	}
 	
 	/**
