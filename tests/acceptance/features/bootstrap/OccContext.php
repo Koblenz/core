@@ -3,6 +3,7 @@
  * ownCloud
  *
  * @author Phil Davis <phil@jankaritech.com>
+ * @author David Toledo <dtoledo@owncloud.com>
  * @copyright Copyright (c) 2018, ownCloud GmbH
  *
  * This code is free software: you can redistribute it and/or modify
