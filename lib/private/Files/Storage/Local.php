@@ -52,6 +52,7 @@ class Local extends Common {
 	protected $realDataDir;
 
 	public function __construct($arguments) {
+		parent::__construct($arguments);
 		if (!isset($arguments['datadir']) || !\is_string($arguments['datadir'])) {
 			throw new \InvalidArgumentException('No data directory set for local storage');
 		}

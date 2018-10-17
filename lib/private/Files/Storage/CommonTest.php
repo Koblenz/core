@@ -39,6 +39,7 @@ class CommonTest extends \OC\Files\Storage\Common {
 	private $storage;
 
 	public function __construct($params) {
+		parent::__construct($params);
 		$this->storage=new \OC\Files\Storage\Local($params);
 	}
 

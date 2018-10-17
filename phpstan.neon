@@ -5,6 +5,7 @@ parameters:
     - %currentWorkingDirectory%/apps/dav/appinfo/Migrations
     - %currentWorkingDirectory%/apps/federatedfilesharing/appinfo/Migrations
     - %currentWorkingDirectory%/apps/files_external/appinfo/Migrations
+    - %currentWorkingDirectory%/apps/files_external/lib
     - %currentWorkingDirectory%/apps/files_sharing/appinfo/Migrations
     - %currentWorkingDirectory%/apps/files_trashbin/appinfo/Migrations
     - %currentWorkingDirectory%/core/Migrations

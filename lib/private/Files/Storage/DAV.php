@@ -90,6 +90,7 @@ class DAV extends Common {
 	 * @throws \Exception
 	 */
 	public function __construct($params) {
+		parent::__construct($params);
 		$this->statCache = new ArrayCache();
 		$this->httpClientService = \OC::$server->getHTTPClientService();
 		$this->webDavClientService = \OC::$server->getWebDavClientService();

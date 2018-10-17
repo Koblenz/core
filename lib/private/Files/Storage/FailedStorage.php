@@ -40,6 +40,7 @@ class FailedStorage extends Common {
 	 * @param array $params ['exception' => \Exception]
 	 */
 	public function __construct($params) {
+		parent::__construct($params);
 		$this->e = $params['exception'];
 		if (!$this->e) {
 			throw new \InvalidArgumentException('Missing "exception" argument in FailedStorage constructor');

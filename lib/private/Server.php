@@ -341,7 +341,7 @@ class Server extends ServerContainer implements IServerContainer, IServiceLoader
 			$userSession->listen('\OC\User', 'postDelete', function ($user) {
 				/** @var $user \OC\User\User */
 				\OC_Hook::emit('OC_User', 'post_deleteUser', ['uid' => $user->getUID()]);
-				$this->emittingCall(function () use (&$user) {
+				$this->emittingCall(function () {
 					return true;
 				}, ['before' => [], 'after' => ['uid' => $user->getUID()]], 'user', 'delete');
 			});
@@ -370,7 +370,7 @@ class Server extends ServerContainer implements IServerContainer, IServiceLoader
 			$userSession->listen('\OC\User', 'changeUser', function ($user, $feature, $value) {
 				/** @var $user \OC\User\User */
 				\OC_Hook::emit('OC_User', 'changeUser', ['run' => true, 'user' => $user, 'feature' => $feature, 'value' => $value]);
-				$this->emittingCall(function () use (&$user, &$feature, &$value) {
+				$this->emittingCall(function () {
 					return true;
 				}, [
 					'before' => ['run' => true, 'user' => $user, 'feature' => $feature, 'value' => $value],
