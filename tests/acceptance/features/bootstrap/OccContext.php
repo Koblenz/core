@@ -527,10 +527,10 @@ class OccContext implements Context {
 	}
 
 	/**
-	* @When the administrator enables the ownCloud backend using the occ command
-	*
-	* @return void
-	*/
+	 * @When the administrator enables the ownCloud backend using the occ command
+	 *
+	 * @return void
+	 */
 	public function theAdministratorEnablesOwnCloudBackendUsingTheOccCommand() {
 		$this->featureContext->invokingTheCommand(
 			"log:owncloud --enable"
